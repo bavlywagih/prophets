@@ -1,0 +1,4 @@
+.flex_drop_navbar_ltr{
+    display: flex;
+    flex-direction: row-reverse;
+}

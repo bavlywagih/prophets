@@ -1,0 +1,7 @@
+
+.div-setting-rtl{
+    flex-direction: row !important;
+}
+.input-end-setting-rtl{
+    text-align: end !important;
+}

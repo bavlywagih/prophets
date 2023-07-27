@@ -1,0 +1,34 @@
+.flex_main_navbar_rtl{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row-reverse !important;
+}
+.flex_end_navbar_rtl{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.flex_drop_navbar_rtl{
+    display: flex !important;
+}
+.menuDrawer_navbar_rtl {
+    right: 0;
+    transform: translateX(100%)!important;
+}
+.drawMenu>.mainNavigation_navbar_rtl {
+    transform: translateX(-25%) !important;
+}
+.flex_reverse_navbar_rtl{
+    display: flex !important ;
+    flex-direction: row !important ;
+}
+.navbar_panel_rtl{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.navbar_times_rtl{
+    text-align: start !important;
+}
+.navbar_dropdown_rtl{
+    text-align: end !important;
+}

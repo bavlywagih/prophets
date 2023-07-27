@@ -1,0 +1,78 @@
+.flex_main_navbar_rtl{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row-reverse !important;
+}
+.flex_end_navbar_rtl{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.flex_drop_navbar_rtl{
+    display: flex !important;
+}
+.menuDrawer_navbar_rtl {
+    right: 0;
+    transform: translateX(100%)!important;
+}
+.drawMenu>.mainNavigation_navbar_rtl {
+    transform: translateX(-25%) !important;
+}
+.flex_reverse_navbar_rtl{
+    display: flex !important ;
+    flex-direction: row !important ;
+}
+.navbar_panel_rtl{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.navbar_times_rtl{
+    text-align: start !important;
+}
+.navbar_dropdown_rtl{
+    text-align: end !important;
+}
+
+.flex_reverse_index_rtl{
+    flex-direction: row-reverse !important;
+}
+.login_label_rtl_trans{
+    display: block;
+    text-align: end;
+}
+.login_div_rtl_trans{
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+.login_form_check_rtl_trans{
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+.login_label_check_rtl_trans{
+    padding-right: 28px;
+}
+
+.div-setting-rtl{
+    flex-direction: row !important;
+}
+.input-end-setting-rtl{
+    text-align: end !important;
+}
+
+.prophet_details_container_rtl{
+    flex-direction: column ;
+}
+.div_cont_flex_prophet_rtl{
+    flex-direction: row-reverse ;
+}
+.text_cont_flex_prophet_rtl{
+    text-align: end;
+}
+.h_cont_flex_prophet_rtl{
+    text-align: end !important;
+}
+.print_rtl{
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+}

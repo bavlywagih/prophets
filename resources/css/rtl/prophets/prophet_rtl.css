@@ -1,0 +1,17 @@
+.prophet_details_container_rtl{
+    flex-direction: column ;
+}
+.div_cont_flex_prophet_rtl{
+    flex-direction: row-reverse ;
+}
+.text_cont_flex_prophet_rtl{
+    text-align: end;
+}
+.h_cont_flex_prophet_rtl{
+    text-align: end !important;
+}
+.print_rtl{
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+}

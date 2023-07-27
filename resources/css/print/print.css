@@ -1,0 +1,8 @@
+    @media print {
+        #menuHolder , .print , .proph , .image {
+            display: none !important;
+        }
+        .prophet-details-container .content{
+            flex-basis: 100% !important;
+        }
+    }

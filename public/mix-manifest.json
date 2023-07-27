@@ -1,0 +1,7 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/rtl/app.css": "/css/rtl/app.css",
+    "/css/ltr/app.css": "/css/ltr/app.css",
+    "/css/print/print.css": "/css/print/print.css"
+}
