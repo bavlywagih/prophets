@@ -19,8 +19,11 @@
 
     .prophet-details-container .image img {
         display: block;
-        border-radius: 6px;
-        width: 50%;
+        width: 25%;
+        background: #fff;
+        -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+        border: 1px solid #0000004f;
+        padding: 4px;
     }
 
     .prophet-details-container .content {

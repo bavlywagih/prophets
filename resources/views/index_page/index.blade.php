@@ -1,5 +1,13 @@
 @extends('template.template')
 @section('content')
+<style>
+    body{
+        background-image: url({{ asset('image/index/jhj.jpeg') }});
+        background-size: 15%;
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
 <div>
     <div class="container">
         <div class="page-banner home-banner">

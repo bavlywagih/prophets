@@ -1,6 +1,14 @@
 @extends('template.template')
 @section('content')
+@php
+    $arabic = $prophet->story_arabic ;
+    $storys_arabic = explode("\n", $arabic );
 
+    $english = $prophet->story_english ;
+    $storys_english = explode("\n", $english );
+
+
+@endphp
 <div class="print px-3">
     
     <a class="mt-3 text-decoration-none print_rtl  text-primary d-block text-start " style="cursor: pointer;" onclick="window.print()" ><i class="fa-solid fa-print"></i>{{ trans('prophets/show.print') }}</a>
@@ -32,9 +40,14 @@
                 <div class=" my-3">
                     <h4 class="text-start h_cont_flex_prophet_rtl"><b>{{ trans('prophets/show.story_arabic') }}</b></h4>
                     @if (App::getlocale() == 'ar')
-                        <p class="card-title  opacity-75  text_cont_flex_prophet_rtl">{{ $prophet->story_arabic}}</p>
+                        @foreach ($storys_arabic as $story_arabic)
+                        
+                        <p class="card-title  opacity-75 py-1 pe-3 text_cont_flex_prophet_rtl">{{ $story_arabic}}</p>
+                        @endforeach
                     @else
-                        <p class="card-title  opacity-75 ">{{ $prophet->story_english}}</p>
+                        @foreach ($storys_english as $story_english)
+                        <p class="card-title  opacity-75 py-1 pe-3 text_cont_flex_prophet_rtl">{{ $story_english}}</p>
+                        @endforeach                    
                     @endif
                 </div>
                 {{-- <a class="mt-3 text-primary d-block text-start" href="">إلي صفحة الأباء البطاركة...</a> --}}
