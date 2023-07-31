@@ -113,12 +113,12 @@ select.noStyle {
     padding-right: 25px;
 }
 
-.page-banner {
+.page-banner{
     position: relative;
     margin-top: 16px;
     margin-bottom: 16px;
     height: 320px;
-    background-color: #F6F5FC;
+    background-color: rgb(246 245 252 / 82%);
     color: #645F88;
     border-radius: 30px;
     z-index: 10;
@@ -138,7 +138,7 @@ select.noStyle {
     overflow: hidden;
 
 }
-.img-fluid::before{
+/* .img-fluid::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -152,7 +152,7 @@ select.noStyle {
 }
 .img-fluid:hover::before {
     animation: flashing 3s;    
-}
+} */
 .img-fluid:hover {
     border-radius: 5px !important;
 }
@@ -163,7 +163,7 @@ select.noStyle {
     transform: rotate(5deg) scale(1.3);
     transition: 3s;
 }
-
+/* 
 @keyframes flashing {
 
     0% {
@@ -178,7 +178,7 @@ select.noStyle {
         width: 200%;
         height: 200%;
     }
-}
+} */
 
 /* 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
 .page-banner.home-banner img {
@@ -255,8 +255,11 @@ select.noStyle {
 
     .prophet-details-container .image img {
         display: block;
-        border-radius: 6px;
-        width: 50%;
+        width: 25%;
+        background: #fff;
+        -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+        border: 1px solid #0000004f;
+        padding: 4px;
     }
 
     .prophet-details-container .content {
