@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .div-qr-media {
+        position: unset !important;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+}

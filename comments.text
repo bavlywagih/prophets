@@ -1,0 +1,117 @@
+navbar script
+        var menuHolder = document.getElementById('menuHolder')
+        var siteBrand = document.getElementById('siteBrand')
+        var smallname = document.getElementById('small-name')
+        function menuToggle() {
+            if (menuHolder.className === "drawMenu") menuHolder.className = "sticky-top"
+            else menuHolder.className = "drawMenu"
+        };
+
+        if (window.innerWidth < 426) siteBrand.innerHTML = " "
+        window.onresize = function () {
+            if (window.innerWidth < 420) siteBrand.innerHTML = " "
+            else siteBrand.innerHTML = "تسلسل انبياء العهد القديم"
+        };
+
+        if (window.innerWidth < 426) smallname.innerHTML = "gjgj";
+        window.onresize = function () {
+            if (window.innerWidth < 420) smallname.innerHTML = "jj"
+            else smallname.innerHTML = "dffd"
+        }
+
+
+
+
+//             public function sendResetLink(Request $request)
+//             {
+//                 $request->validate(['email' => ['required', 'email']]);
+//                 $status = Password::sendResetLink($request->only('email'));
+
+//                 return $status === Password::RESET_LINK_SENT
+//                 ? back()->with(['status' => __($status)])
+//                 : back()->withErrors(['email' => __($status)]);
+//             }
+
+//             public function showResetPasswordForm(string $token) : Factory|View|Application {
+//                 return view('auth.reset-password', ['token' => $token]);
+//             }
+
+Reset Password Controller
+    //   public function resetPassword(Request $request) : RedirectResponse {
+    //     $request->validate([
+    //       'token' => ['required'],
+    //       'email' => ['required', 'email'],
+    //       'password' => ['required', 'min:8', 'confirmed'],
+    //     ]);
+
+    //     $data = $request->only('email', 'password', 'password_confirmation', 'token');
+
+    //     $status = Password::reset($data, function ($user, $password) {
+    //       $user->forceFill(['password' => Hash::make($password)])->setRememberToken(Str::random(60));
+    //       $user->save();
+    //       event(new PasswordReset($user));
+    //     });
+
+    //     return $status === Password::PASSWORD_RESET
+    //       ? redirect()->route('login')->with('status', __($status))
+    //       : back()->withErrors(['email' => [__($status)]]);
+    //   }
+    //->with('success' , 'we have send an email to reset password . ')
+
+
+    Reset Password Controller after edit
+        public function sendResetLinkView()  {
+            return view('login.forget-password');
+        }
+
+        public function sendResetLinkViewpost(Request $request)  {
+            $request->validate(['email' => ['required', 'email']]);
+            $status = Password::sendResetLink($request->only('email'));
+
+            return $status === Password::RESET_LINK_SENT
+                ? back()->with(['status' => __($status)])
+                : back()->withErrors(['email' => __($status)]);
+        }
+
+        public function reset_password($token)
+        {
+            return view('login.new-password',
+                ['token' => $token]
+            );
+        }
+
+        public function reset_password_post(Request $request)
+        {
+            $request->validate([
+                'token' => ['required'],
+                'email' => ['required', 'email'],
+                'password' => ['required', 'min:8', 'confirmed'],
+            ]);
+
+            $data = $request->only('email', 'password', 'password_confirmation', 'token');
+
+            $status = Password::reset($data, function ($user, $password) {
+                $user->forceFill(['password' => Hash::make($password)])->setRememberToken(Str::random(60));
+                $user->save();
+                event(new PasswordReset($user));
+            });
+
+            return $status === Password::PASSWORD_RESET
+                ? redirect()->route('login')->with('status', __($status))
+                : back()->withErrors(['email' => [__($status)]]);
+        }
+
+
+Route::get('/forget-password', [ResetPasswordController::class, 'sendResetLinkView'])->name('sendResetLinkView');
+Route::post('/forget-password', [ResetPasswordController::class, 'sendResetLinkViewpost'])->name('sendResetLinkViewpost');
+Route::get('/reset_password/{token}', [ResetPasswordController::class, 'reset_password'])->name('password.reset');
+Route::post('/reset_password/', [ResetPasswordController::class, 'reset_password_post'])->name('reset_password_post');
+// Route::post('/forgot-password/send-link', [ResetPasswordController::class, 'sendResetLink'])->name('password.email');
+// Route::post('/reset-password', [ResetPasswordController::class, 'resetPassword'])->name('password.update');
+// Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetPasswordForm'])->name('password.reset');
+
+
+
+//bootstrap.min.css
+# sourceMappingURL=bootstrap.min.css.map 
+

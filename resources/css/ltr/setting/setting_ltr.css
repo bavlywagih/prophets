@@ -1,0 +1,7 @@
+
+.div-setting-ltr{
+    flex-direction: row !important;
+}
+.text-start-setting-ltr{
+    text-align: start !important;
+}

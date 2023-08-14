@@ -1,0 +1,29 @@
+.flex_drop_navbar_ltr{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.img-fluid-ltr-index{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.div-profile-ltr{
+    flex-direction: row !important;
+}
+.text-start-profile-ltr{
+    text-align: start !important;
+}
+.register_label_trans_ltr{
+    display: block;
+    text-align: start;
+}
+.login_label_ltr_trans{
+    display: block;
+    text-align: start;
+}
+
+.div-setting-ltr{
+    flex-direction: row !important;
+}
+.text-start-setting-ltr{
+    text-align: start !important;
+}

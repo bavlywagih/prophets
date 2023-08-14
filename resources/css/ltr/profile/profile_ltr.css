@@ -1,0 +1,6 @@
+.div-profile-ltr{
+    flex-direction: row !important;
+}
+.text-start-profile-ltr{
+    text-align: start !important;
+}

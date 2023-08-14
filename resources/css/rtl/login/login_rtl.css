@@ -1,0 +1,15 @@
+.login_label_rtl_trans{
+    display: block;
+    text-align: end;
+}
+.login_div_rtl_trans{
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+.login_form_check_rtl_trans{
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+.login_label_check_rtl_trans{
+    padding-right: 28px;
+}

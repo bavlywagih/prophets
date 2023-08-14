@@ -1,0 +1,27 @@
+.prophet_details_container_rtl{
+    flex-direction: column ;
+}
+.div_cont_flex_prophet_rtl{
+    flex-direction: row-reverse ;
+}
+.text_cont_flex_prophet_rtl{
+    text-align: end;
+}
+.h_cont_flex_prophet_rtl{
+    text-align: end !important;
+}
+.type_rtl{
+    text-align: end !important;
+}
+.print_rtl{
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.div_qr_rtl{
+    right: 17px;
+}
+.collapsed-rtl{
+    display: flex;
+    flex-direction: row-reverse;
+}
