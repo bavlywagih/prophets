@@ -36,7 +36,7 @@
             <tbody>
                 @forelse ($users as $user)
                     <tr>
-                        <th scope="row"><a href="{{ route('Profile', $user->id ) }}">{{$user->name}} </a></th>
+                        <th scope="row"><a href="{{ route('Profile', $user->id  ) }}">{{$user->name}} </a></th>
                         <td >
                             <button type="button" class="btn btn-success"><a href="" class="text-decoration-none text-white" >تعديل</a></button>
                             <button type="button" class="btn btn-danger"><a  href=""  class="text-decoration-none text-white" >حذف</a></button>
@@ -51,7 +51,7 @@
     </div>
 
 
-
+<div></div>
 
 
 @endsection
